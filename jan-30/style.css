@@ -1,0 +1,9 @@
+h1 {
+  color: purple;
+  border-style: dotted;
+}
+
+ul {
+  text-align: center;
+  list-style-position: inside;
+}
