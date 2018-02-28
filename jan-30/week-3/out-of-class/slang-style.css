@@ -1,0 +1,54 @@
+<!DOCTYPE css>
+:lang(ja) {
+  font-family: Osaka;
+}
+
+body {
+  font-family: "Average Sans", sans-serif, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  background-color: white;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+h1 {
+  font-family: "Goudy Bookletter 1911", serif, serif;
+  color: #CD8C52;
+}
+
+h2 {
+  font-family: "Goudy Bookletter 1911", serif, serif;
+}
+
+.term {
+  font-family: "Goudy Bookletter 1911", serif, serif;
+  font-size: 1.5em;
+  font-variant: small-caps;
+}
+
+#signed-by {
+  font-variant: small-caps;
+}
+
+blockquote {
+  background: #FCF7D3;
+}
+
+.person {
+  background-color: #DEE8BE;
+}
+
+a:link {
+  color: #0000FF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#wedge-and-spoon {
+  text-align: center;
+  background-color: #FCF7D3;
+}
