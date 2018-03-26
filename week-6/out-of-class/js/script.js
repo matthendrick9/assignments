@@ -5,17 +5,7 @@ function renderOutput(output) {
     output_element.innerHTML += "<div>" + output + "</div>"
 }
 
-
-function helloWorld() {
-  renderOutput("Hello world!")
-}
-
-helloWorld();
-
-alert("this is a test");
-
-function dailyHours(hours) {
-     hours = [
+let hours = [
     "Monday: 9a - 9p",
     "Tuesday: 9a - 9p",
     "Wednesday: 9a - 9p",
@@ -24,7 +14,16 @@ function dailyHours(hours) {
     "Saturday: 9a - 5p",
     "Sunday: closed"
 ];
- renderOutput(hours) 
-}
 
-hours.forEach(dailyHours)
+for(let i=0; i<hours.length; i++){
+ let days = (hours[i].split(": "))
+ let days_hours = (hours[i].split(": "));
+  if (days[0] === "Sunday") {
+    renderOutput(days[0] + " the library is closed");
+  } else {
+     renderOutput(days[0] + " the library is open " + days_hours[1]);
+  }
+}
+  function dailyHours(hours) {
+  renderOutput(hours);
+  }
