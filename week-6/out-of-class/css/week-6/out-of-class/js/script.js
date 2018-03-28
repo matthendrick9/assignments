@@ -15,17 +15,6 @@ let hours = [
     "Sunday: closed"
 ];
 
-function displayOneDaysHours(one_days_hours) {
-  let parts_of_hours = one_days_hours.split(": ");
-  let output = "On " + parts_of_hours[0] + " the hours are " + parts_of_hours[1];
-  
-  if (parts_of_hours[0] === "Sunday") {
-    renderOutput("On Sunday the library is closed");
-  } else {
-      renderOutput("On " + parts_of_hours[0] + " the hours are " + parts_of_hours[1]);
-  }
-}
-
 // for(let i=0; i<hours.length; i++){
 //  let days = (hours[i].split(": "))
 //  let days_hours = (hours[i].split(": "));
@@ -37,7 +26,5 @@ function displayOneDaysHours(one_days_hours) {
 // }
   function dailyHours(hours) {
 //   renderOutput(hours);
-    hours.forEach(displayOneDaysHours);
+    console.log("dailyHours worked");
   }
-
-dailyHours(hours);
