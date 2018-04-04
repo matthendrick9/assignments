@@ -42,3 +42,15 @@ function displayItem(item) {
 }
 
 // ADD YOUR CODE BELOW
+
+let search_input = document.querySelector("#search-input");
+
+let search_button = document.querySelector("#search-button");
+
+function handleSearchButtonClick() {
+  console.log(search_input.value)
+  search(search_input.value);
+}
+
+search_button.onclick = handleSearchButtonClick;
+
