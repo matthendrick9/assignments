@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Town Library - GIS</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118136393-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-118136393-1');
+</script>
+
+    
+
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+<body id="home">
+  <main>
+
+<div id="container">
+
+    
+    <div id="header">
+         <h1>Town Library</h1>
+    </div>
+    
+    <ul id="nav">
+        <li><a id="homenav" href="index.html">Home</a></li>
+        <li><a id="eventsnav" href="events.html">Events</a></li>
+        <li><a id="recnav" href="recommendations.html">Now what?</a></li>
+        <li><a id="mapnav" href="map.html">GIS</a></li>
+        <li><a id="aboutnav" href="about.html">About</a></li>
+    </ul>
+    
+    <div id="sidebar">
+        <h1>GIS</h1>
+        <ul id="sidebarnav">
+            <li><a href="https://twitter.com/mattyice" target="_blank">@MattyIce</a></li>
+        </ul>
+    </div>
+    
+		
+      <div id="minihead">
+    <h2>Places I've Lived</h2>
+  </div>
+  
+    <div id="map">
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHdedtjlfke-TlpSlgvRS7rkQfJpU9TsQ&callback=initMap">
+      </script>
+      
+      <script>
+  function initMap() {
+    var bicester = {lat: 51.899592, lng: -1.153588};
+    var wichitafalls = {lat: 33.967634, lng: -98.511551};
+    var scott = {lat: 38.541941, lng: -89.855679};
+    var belleville = {lat: 38.512528, lng: -89.950599};
+    var smithton = {lat: 38.408385, lng: -89.992464};
+    var galesburg = {lat: 40.942423, lng: -90.371987};
+    var antioch = {lat: 42.478152, lng: -88.095567};
+    var oxford = {lat: 34.365331, lng: -89.533881};
+    var aitmimoun = {lat: 33.781831, lng: -5.782912};
+    var sidismail = {lat: 32.825824, lng: -8.511529};
+    var brighton = {lat: 42.336408, lng: -71.150435};
+    var brookline = {lat: 42.339453, lng: -71.135414};
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 3,
+      center: brookline
+  });
+    var marker = new google.maps.Marker({
+    position: bicester,
+    map: map
+  });
+  var marker1 = new google.maps.Marker({
+    position: wichitafalls,
+    map: map
+  });
+  var marker2 = new google.maps.Marker({
+    position: scott,
+    map: map
+  });
+  var marker3 = new google.maps.Marker({
+    position: belleville,
+    map: map
+  });
+  var marker4 = new google.maps.Marker({
+    position: smithton,
+    map: map
+  });
+  var marker5 = new google.maps.Marker({
+    position: galesburg,
+    map: map
+  });
+  var marker6 = new google.maps.Marker({
+    position: antioch,
+    map: map
+  });
+  var marker7 = new google.maps.Marker({
+    position: oxford,
+    map: map
+  });
+  var marker8 = new google.maps.Marker({
+    position: aitmimoun,
+    map: map
+  });
+  var marker9 = new google.maps.Marker({
+    position: sidismail,
+    map: map
+  });
+  var marker10 = new google.maps.Marker({
+    position: brighton,
+    map: map
+  });
+  var marker11 = new google.maps.Marker({
+    position: brookline,
+    map: map
+  });
+}
+    </script>
+  </div>
+<br>
+ 
+      <div id="placelist">
+        <ul>
+          
+        
+      <li>Bicester, United Kingdom</li>
+      <li>Wichita Falls, Texas</li>
+      <li>Scott AFB, Illinois</li>
+      <li>Belleville, Illinois</li>
+      <li>Smithton, Illinois</li>
+      <li>Galesburg, Illinois</li>
+      <li>Antioch, Illinois</li>
+      <li>Oxford, Mississippi</li>
+      <li>Had Ait Mimoun, Morocco</li>
+      <li>Sidi Smail, Morocco</li>
+      <li>Brighton, Massachusetts</li>
+      <li>Brookline, Massachusetts</li>
+        
+        </ul>
+          
+          
+      </div>
+
+    
+
+    <div id="footer">
+      <p>2018 MattyIce</p>
+      
+    </div>
+    
+    
+    
+    
+
+</div>
+  </main>
+</body>
+</html>

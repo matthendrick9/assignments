@@ -53,6 +53,6 @@ let films = [the_third_man, rebecca, the_philadelphia_story];
 
 let result_list = document.querySelector(".result_list");
 
-function displayOneBook(book){
-  result_list.innerHTML = "<li>" + book.title + "</li>";
+function displayOneBook(books){
+  result_list.innerHTML = "<li>" + books.title + "</li>";
 }
